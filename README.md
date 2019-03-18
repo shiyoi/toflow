@@ -18,7 +18,7 @@ cd ~/torch; bash install-deps;
 
 #### CUDA [optional]
 CUDA is suggested (https://developer.nvidia.com/cuda-toolkit) for fast inference. The demo code is still runnable without CUDA, but much slower.
-要求CUDA 8.0，并且需要从nvidia网站下载安装cudnn-8.0-linux-x64-v5.0-ga.tgz
+要求CUDA 8.0，并且需要从nvidia网站下载安装cudnn-8.0-linux-x64-v5.0-ga.tgz(https://developer.nvidia.com/rdp/cudnn-archive)
 
 #### Matlab [optional]
 We use Matlab for generating video denoising/super-resolution dataset and quantitative evaluation require Matlab installation (https://www.mathworks.com/products/matlab.html). It is not necessary for the demo code.

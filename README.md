@@ -37,7 +37,7 @@ git clone https://github.com/anchen1011/toflow.git
 #### Install dependency
 ```sh
 cd toflow/src/stnbhwd
-编辑CMakeLists.txt，将sm_20修改为
+编辑CMakeLists.txt，将sm_20修改为sm_30
 luarocks make
 ```
 This will install 'stn' package for Lua. The list of components:

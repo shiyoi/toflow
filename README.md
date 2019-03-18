@@ -12,9 +12,13 @@ If you cannot access YouTube, please download 1080p video from [here](http://tof
 
 #### Torch
 Our implementation is based on Torch 7 (http://torch.ch).
+git clone https://github.com/torch/distro.git ~/torch --recursive
+cd ~/torch; bash install-deps;
+./install.sh
 
 #### CUDA [optional]
 CUDA is suggested (https://developer.nvidia.com/cuda-toolkit) for fast inference. The demo code is still runnable without CUDA, but much slower.
+要求CUDA 8.0，并且需要从nvidia网站下载安装cudnn-8.0-linux-x64-v5.0-ga.tgz
 
 #### Matlab [optional]
 We use Matlab for generating video denoising/super-resolution dataset and quantitative evaluation require Matlab installation (https://www.mathworks.com/products/matlab.html). It is not necessary for the demo code.
@@ -33,6 +37,7 @@ git clone https://github.com/anchen1011/toflow.git
 #### Install dependency
 ```sh
 cd toflow/src/stnbhwd
+编辑CMakeLists.txt，将sm_20修改为
 luarocks make
 ```
 This will install 'stn' package for Lua. The list of components:
